@@ -30,6 +30,8 @@ import HostLayout from "../components/HostLayout.jsx"
 function App() {
 
   return (
+
+    // Renders components
     <BrowserRouter>
        <Routes>
         <Route path="/" element={<Layout />}>
