@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import React from "react"
 
 
 function Vans() {
@@ -10,6 +11,7 @@ function Vans() {
     }, [])
 
     const vanElements = vans.map(van => (
+        
         <div key={van.id} className="van-tile">
             <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} />

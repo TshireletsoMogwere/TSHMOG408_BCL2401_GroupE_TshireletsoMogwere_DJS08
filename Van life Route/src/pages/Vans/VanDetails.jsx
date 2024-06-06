@@ -14,7 +14,7 @@ function VanDetail() {
 
     return (
         <div className="van-detail-container">
-        {van ? (
+        {Van ? (
             <div className="van-detail">
                 <img src={Van.imageUrl} />
                 <i className={`van-type ${Van.type} selected`}>{Van.type}</i>
