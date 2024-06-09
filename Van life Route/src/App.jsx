@@ -31,13 +31,6 @@ import HostVanInfo from "./pages/Host/HostVanInfo"
 import HostVanPricing from "./pages/Host/HostVanPricing.jsx"
 import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
 
-const swCharacters = [
-  { name: "Luke Skywalker", type: "Jedi" },
-  { name: "Darth Vader", type: "Sith" },
-  { name: "Emperor Palpatine", type: "Sith" },
-  { name: "Yoda", type: "Jedi" }
-]
-
 
 function App() {
 
