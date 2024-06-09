@@ -15,7 +15,15 @@ function HostVanDetail() {
         return <h1>Loading...</h1>
     }
     
-    return <h1>Host Van Detail Page</h1>
+    return (
+        <div>
+            <img src={currentVan.imageUrl} width={150} />
+            <h2>{currentVan.name}</h2>
+            <p>{currentVan.price}</p>
+            <p>{currentVan.type}</p>
+        </div>
+    )
 }
+
 
 export default HostVanDetail
