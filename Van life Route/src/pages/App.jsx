@@ -18,19 +18,19 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, useSearchParams } from "react-router-dom";
 import Home from "./Home.jsx"
 import About from "./About.jsx"
-import Vans from "./pages/Vans/Vans.jsx"
-import"../server.js"
-import VanDetail from "./pages/Vans/VanDetails.jsx"
-import Layout from "../components/Layout.jsx"
-import Dashboard from "./pages/Host/Dashboard.jsx"
-import Income from "./pages/Host/Income.jsx"
-import Reviews from "./pages/Host/Reviews.jsx"
-import HostLayout from "../components/HostLayout.jsx"
-import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
-import HostVanInfo from "./pages/Host/HostVanInfo"
-import HostVanPricing from "./pages/Host/HostVanPricing.jsx"
-import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
-import HostVans from "./pages/Host/HostVans.jsx";
+import Vans from "./Vans/Vans.jsx"
+import"../../server.js"
+import VanDetail from "./Vans/VanDetails.jsx"
+import Layout from "../../components/Layout.jsx"
+import Dashboard from "./Host/Dashboard.jsx"
+import Income from "./Host/Income.jsx"
+import Reviews from "./Host/Reviews.jsx"
+import HostLayout from "../../components/HostLayout.jsx"
+import HostVanDetail from "./Host/HostVanDetail.jsx";
+import HostVanInfo from "./Host/HostVanInfo.jsx"
+import HostVanPricing from "./Host/HostVanPricing.jsx"
+import HostVanPhotos from "./Host/HostVanPhotos.jsx"
+import HostVans from "./Host/HostVans.jsx";
 
 
 function App() {
