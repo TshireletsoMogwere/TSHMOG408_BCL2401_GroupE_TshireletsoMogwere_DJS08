@@ -12,6 +12,22 @@ function Login() {
     const from = location.state?.from || "/host";
 
 
+    function handleSubmit(e) {
+        e.preventDefault()
+        setStatus("submitting")
+        loginUser(loginFormData)
+            .then(data => {
+                setError(null)
+                localStorage.setItem("loggedin", true)
+                navigate(from, { replace: true })
+            })
+            .catch(err => {
+                setError(err)
+            })
+            .finally(() => {
+                setStatus("idle")
+            })
+    }
 
 }
 
