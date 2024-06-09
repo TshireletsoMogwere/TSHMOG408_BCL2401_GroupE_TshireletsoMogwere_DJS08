@@ -1,6 +1,6 @@
 import { Link, useSearchParams } from "react-router-dom"
 import React from "react"
-// import { getVans } from "../../api"
+import { getVans } from "../../api"
 
 
 function Vans() {
@@ -109,3 +109,5 @@ function Vans() {
         </div>
     )
 }
+
+export default Vans
