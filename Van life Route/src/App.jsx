@@ -29,7 +29,7 @@ import HostLayout from "../components/HostLayout.jsx"
 import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
 import HostVanInfo from "./pages/Host/HostVanInfo"
 import HostVanPricing from "./pages/Host/HostVanPricing"
-import HostVanPhotos from "./pages/Host/HostVanPhotos"
+import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
 
 
 
