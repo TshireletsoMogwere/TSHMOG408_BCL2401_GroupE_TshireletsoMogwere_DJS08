@@ -28,7 +28,7 @@ import Reviews from "./pages/Host/Reviews.jsx"
 import HostLayout from "../components/HostLayout.jsx"
 import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
 import HostVanInfo from "./pages/Host/HostVanInfo"
-import HostVanPricing from "./pages/Host/HostVanPricing"
+import HostVanPricing from "./pages/Host/HostVanPricing.jsx"
 import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
 
 
