@@ -15,7 +15,7 @@
  */
 import React from "react"
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useSearchParams } from "react-router-dom";
 import Home from "./Home.jsx"
 import About from "./About.jsx"
 import Vans from "./pages/Vans/Vans.jsx"
@@ -31,6 +31,12 @@ import HostVanInfo from "./pages/Host/HostVanInfo"
 import HostVanPricing from "./pages/Host/HostVanPricing.jsx"
 import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
 
+const swCharacters = [
+  { name: "Luke Skywalker", type: "Jedi" },
+  { name: "Darth Vader", type: "Sith" },
+  { name: "Emperor Palpatine", type: "Sith" },
+  { name: "Yoda", type: "Jedi" }
+]
 
 
 function App() {
