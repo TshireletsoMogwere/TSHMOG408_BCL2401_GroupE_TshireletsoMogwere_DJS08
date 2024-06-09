@@ -30,6 +30,7 @@ import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
 import HostVanInfo from "./pages/Host/HostVanInfo"
 import HostVanPricing from "./pages/Host/HostVanPricing.jsx"
 import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx"
+import HostVans from "./pages/Host/HostVans.jsx";
 
 
 function App() {
@@ -43,8 +44,10 @@ function App() {
         <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
-          <Route path="vans/:id" element={<VanDetail />} /> 
-             
+          <Route path="vans/:id" element={<VanDetail />} />
+          <Route path="login" element={<Login />} />
+
+            <Route element={<AuthRequired />}>
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
@@ -57,6 +60,7 @@ function App() {
             <Route path="photos" element={<HostVanPhotos />} />
           </Route>
           </Route> 
+          </Route>
       </Routes> 
     </BrowserRouter>
   )
