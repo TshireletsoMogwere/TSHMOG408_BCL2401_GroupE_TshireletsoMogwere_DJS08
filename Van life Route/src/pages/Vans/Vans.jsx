@@ -3,15 +3,20 @@ import React from "react"
 
 
 function Vans() {
+    const [searchParams, setSearchParams] = useSearchParams()
     const [vans, setVans] = React.useState([])
+    
+    const typeFilter = searchParams.get("type")
+    console.log(typeFilter)
+    
+    
     React.useEffect(() => {
         fetch("/api/vans")
-        .then(res => res.json())
-        .then(data => setVans(data.vans))
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
     }, [])
 
     const vanElements = vans.map(van => (
-        
         <div key={van.id} className="van-tile">
             <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} />
@@ -24,15 +29,12 @@ function Vans() {
         </div>
     ))
 
-
- return (
-       <div className="van-list-container">
-          <h1>Explore our van options</h1>
-        <div className="van-list">
-        {vanElements}
+    return (
+        <div className="van-list-container">
+            <h1>Explore our van options</h1>
+            <div className="van-list">
+                {vanElements}
+            </div>
         </div>
-    </div>
     )
 }
-
-export default Vans
