@@ -14,6 +14,7 @@
  * linked in the slides.
  */
 import React from "react"
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home.jsx"
 import About from "./About.jsx"
@@ -25,6 +26,8 @@ import Dashboard from "./pages/Host/Dashboard.jsx"
 import Income from "./pages/Host/Income.jsx"
 import Reviews from "./pages/Host/Reviews.jsx"
 import HostLayout from "../components/HostLayout.jsx"
+import HostVanDetail from "./pages/Host/HostVanDetail.jsx";
+
 
 
 function App() {
@@ -35,16 +38,18 @@ function App() {
     <BrowserRouter>
        <Routes>
         <Route path="/" element={<Layout />}>
-          
-          <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} /> 
-          
-          <Route path="/host" element={<HostLayout />} />
-          <Route path="/host" element={<Dashboard />} />
-          <Route path="/host/income" element={<Income />} /> 
-          <Route path="/host/reviews" element={<Reviews />} /> 
+             
+          <Route path="host" element={<HostLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="income" element={<Income />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVanDetail />} />
+          </Route>
           </Route> 
       </Routes> 
     </BrowserRouter>
