@@ -16,7 +16,7 @@ function AuthRequired() {
                 replace
             />)
     }
-    return <Outlet />
+         return <Outlet />
 }
 
 export default AuthRequired

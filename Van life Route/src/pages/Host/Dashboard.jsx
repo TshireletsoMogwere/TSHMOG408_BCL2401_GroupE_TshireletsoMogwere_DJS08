@@ -1,6 +1,6 @@
 import React from "react"
+import { BsStarFill } from "react-icons/bs"
 import { Link } from "react-router-dom"
-// import { BsStarFill } from "react-icons/bs"
 import { getHostVans } from "../../api"
 
 
@@ -50,26 +50,21 @@ if (error) {
                 </div>
                 <Link to="income">Details</Link>
             </section>
+
             <section className="host-dashboard-reviews">
                 <h2>Review score</h2>
-
                 <BsStarFill className="star" />
+                <p><span>5.0</span>/5</p>
+                <Link to="reviews">Details</Link>
+             </section>
 
-<p>
-    <span>5.0</span>/5
-</p>
-<Link to="reviews">Details</Link>
-</section>
             <section className="host-dashboard-reviews">
                 <h2>Review score</h2>
-
                 <BsStarFill className="star" />
-
-                <p>
-                    <span>5.0</span>/5
-                </p>
+                <p><span>5.0</span>/5</p>
                 <Link to="reviews">Details</Link>
             </section>
+            
             <section className="host-dashboard-vans">
                 <div className="top">
                     <h2>Your listed vans</h2>

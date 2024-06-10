@@ -8,6 +8,7 @@ function Income() {
         { amount: 560, date: "Dec 12, '22", id: "2" },
         { amount: 980, date: "Dec 3, '22", id: "3" },
     ]
+    
     return (
         <section className="host-income">
         <h1>Income</h1>

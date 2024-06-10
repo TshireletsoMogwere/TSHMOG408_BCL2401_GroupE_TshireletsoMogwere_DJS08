@@ -13,27 +13,31 @@ function Header() {
 function fakeLogOut() {
   localStorage.removeItem("loggedin")
 }
+
 return (
 <header>
     <Link to="login" className="login-link">
                     <img src={imageUrl} className="login-icon" />
-            </Link>
-      <Link className="site-logo" to="/">#VANLIFE</Link>
-      <nav>
-      <NavLink to="/host"  className={({isActive}) => isActive ? "active-link" : null}>
+    </Link>
+
+    <Link className="site-logo" to="/">#VANLIFE</Link>
+
+    <nav>
+    <NavLink to="/host"  className={({isActive}) => isActive ? "active-link" : null}>
         Host
-      </NavLink>
+     </NavLink>
 
-      <NavLink  to="/about" className={({isActive}) => isActive ? "active-link" : null}>
+    <NavLink  to="/about" className={({isActive}) => isActive ? "active-link" : null}>
         About
-      </NavLink>
+    </NavLink>
 
-      <NavLink to="/vans" className={({isActive}) => isActive ? "active-link" : null}>
+    <NavLink to="/vans" className={({isActive}) => isActive ? "active-link" : null}>
         Vans
-      </NavLink>
-            <button onClick={fakeLogOut}>X</button>
-      </nav>
-    </header>
+    </NavLink>
+
+    <button onClick={fakeLogOut}>X</button>
+    </nav>
+ </header>
 )
 }
 
