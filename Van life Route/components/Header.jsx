@@ -1,6 +1,7 @@
 import React from "react"
 import {Link, NavLink} from "react-router-dom"
-// import imageUrl from "/assets/images/avatar-icon.png"
+import imageUrl from "../../assets/images/avatar-icon.png"
+
 
 function Header() {
   const activeStyles = {
@@ -14,6 +15,9 @@ function fakeLogOut() {
 }
 return (
 <header>
+    <Link to="login" className="login-link">
+                    <img src={imageUrl} className="login-icon" />
+            </Link>
       <Link className="site-logo" to="/">#VANLIFE</Link>
       <nav>
       <NavLink to="/host"  className={({isActive}) => isActive ? "active-link" : null}>
@@ -27,9 +31,6 @@ return (
       <NavLink to="/vans" className={({isActive}) => isActive ? "active-link" : null}>
         Vans
       </NavLink>
-            <Link to="login" className="login-link">
-                    <img src={imageUrl} className="login-icon" />
-            </Link>
             <button onClick={fakeLogOut}>X</button>
       </nav>
     </header>
